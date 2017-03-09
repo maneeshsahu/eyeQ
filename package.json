@@ -1,0 +1,11 @@
+{
+	"name": "eyeq-device",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"ws": "2.2.0"
+  },
+	"scripts": {
+		"start": "node eyeQ.js" 
+	}
+}
