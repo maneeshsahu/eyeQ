@@ -1,0 +1,115 @@
+{
+  "fields": [
+    {
+      "name": "person",
+      "children": [
+        {
+          "name": "gender",
+          "type": "CUSTOM",
+          "valueClass": "String",
+          "isCollection": false,
+          "description": "Gender of person",
+          "tags": [],
+          "metaData": [
+            {
+              "type": "VALUES_STRING",
+              "value": [
+                "M",
+                "F",
+                "U"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "age",
+          "type": "CUSTOM",
+          "valueClass": "Integer",
+          "isCollection": false,
+          "description": "Age of Person",
+          "tags": [],
+          "metaData": [
+            {
+              "type": "MIN_VALUE_INTEGER",
+              "value": 0
+            },
+            {
+              "type": "MIN_VALUE_STRICT",
+              "value": false
+            },
+            {
+              "type": "MAX_VALUE_INTEGER",
+              "value": 120
+            },
+            {
+              "type": "MAX_VALUE_STRICT",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "sentiment",
+          "type": "CUSTOM",
+          "valueClass": "String",
+          "isCollection": false,
+          "tags": []
+        },
+        {
+          "name": "repeatTime",
+          "type": "CUSTOM",
+          "valueClass": "Integer",
+          "isCollection": false,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "snapshot",
+      "children": [
+        {
+          "name": "maleCount",
+          "type": "CUSTOM",
+          "valueClass": "Integer",
+          "isCollection": false,
+          "tags": []
+        },
+        {
+          "name": "femaleCount",
+          "type": "CUSTOM",
+          "valueClass": "Integer",
+          "isCollection": false,
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "showMovie",
+      "description": "Shows a MP4 Video",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "CUSTOM",
+          "valueClass": "String"
+        }
+      ],
+      "isStandard": false,
+      "type": "CUSTOM"
+    },
+    {
+      "name": "showWebpage",
+      "description": "Shows a Web Link",
+      "parameters": [
+        {
+          "name": "url",
+          "type": "CUSTOM",
+          "valueClass": "String"
+        }
+      ],
+      "isStandard": false,
+      "type": "CUSTOM"
+    }
+  ],
+  "messageFormat": "json"
+}
